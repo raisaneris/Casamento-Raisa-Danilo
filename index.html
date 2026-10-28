@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#fffbe4">
+<title>Raisa & Danilo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Didact+Gothic&display=swap">
+<meta name="description" content="Casamento de Raisa e Danilo · 16 de janeiro de 2027 · Fortaleza">
+<meta property="og:title" content="Raisa &amp; Danilo · 16.01.2027">
+<meta property="og:description" content="Confirme sua presença no nosso casamento.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="monograma.png">
+<style>
+html,body{color-scheme:only light}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+/* Layout: uma única coluna estreita sobre papel creme, como um convite impresso; faixas sálvia separam os blocos. */
+:root{
+  --paper:#fffbe4;
+  --paper-2:#f7f3d8;
+  --sage:#6b8a6f;
+  --sage-deep:#4f6b53;
+  --sage-soft:#8cbd8c;
+  --ink:#575756;
+  --line:rgba(107,138,111,.35);
+  --white:#ffffff;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Didact Gothic","Century Gothic","Avenir Next",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.7;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .42 0 0 0 0 .25 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+a{color:var(--sage-deep)}
+:focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+
+/* Navegação */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(255,251,228,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px 22px;justify-content:center;flex-wrap:wrap;padding-block:12px}
+nav a{font-size:12px;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+nav a:hover{color:var(--sage-deep)}
+
+/* Hero */
+.hero{text-align:center;padding-block:28px 56px}
+.logo{display:block;width:100%;max-width:900px;height:auto;margin:0 auto;box-shadow:0 1px 0 var(--line)}
+.date-line{font-family:var(--body);letter-spacing:.6em;font-size:clamp(15px,3.6vw,20px);margin-top:18px;padding-left:.6em;font-variant-numeric:tabular-nums}
+.casal{display:block;width:100%;max-width:440px;height:auto;margin:32px auto 0}
+.invite{margin-top:28px;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--sage-deep)}
+
+/* Seções */
+section{padding-block:64px}
+.eyebrow{display:block;text-align:center;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:10px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,6.4vw,44px);line-height:1.15;text-align:center;margin:0 0 28px;color:var(--sage-deep);text-wrap:balance;letter-spacing:.04em}
+p{margin:0 0 1em;max-width:62ch}
+.prose{margin:0 auto;text-align:center}
+.prose p{margin-inline:auto}
+
+/* Faixa da data */
+.band{background:var(--sage);color:var(--paper)}
+.band h2,.band .eyebrow{color:var(--paper)}
+.datebox{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;max-width:440px;margin:0 auto;text-align:center}
+.datebox .side{font-size:13px;letter-spacing:.28em;text-transform:uppercase;border-block:1px solid rgba(255,251,228,.5);padding-block:8px}
+.datebox .day{font-family:var(--display);font-size:clamp(64px,16vw,96px);line-height:1}
+.datebox .month{grid-column:1/-1;font-family:var(--display);font-size:22px;letter-spacing:.2em;text-transform:uppercase}
+.countdown{display:flex;justify-content:center;gap:clamp(14px,5vw,36px);margin-top:36px;font-variant-numeric:tabular-nums}
+.countdown div{text-align:center;min-width:56px}
+.countdown b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(28px,7vw,38px);line-height:1.1}
+.countdown span{font-size:11px;letter-spacing:.24em;text-transform:uppercase;opacity:.85}
+
+/* Locais */
+.places{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.place{border:1px solid var(--line);padding:28px 24px;text-align:center;background:rgba(255,255,255,.45);display:flex;flex-direction:column;gap:6px;min-width:0}
+.place .when{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--sage-deep)}
+.place h3{font-family:var(--display);font-weight:400;font-size:26px;margin:4px 0 8px;color:var(--ink);line-height:1.2}
+.place address{font-style:normal;font-size:15px;line-height:1.6}
+.place .note{font-size:14px;color:var(--sage-deep);margin-top:4px}
+.btn{display:inline-block;margin-top:auto;padding:11px 22px;border:1px solid var(--sage);color:var(--sage-deep);text-decoration:none;font-family:var(--body);font-size:12px;letter-spacing:.24em;text-transform:uppercase;background:transparent;cursor:pointer;transition:background .2s,color .2s}
+.place .btn{margin-top:16px;align-self:center}
+.btn:hover{background:var(--sage);color:var(--paper)}
+.btn.solid{background:var(--sage);color:var(--paper)}
+.btn.solid:hover{background:var(--sage-deep)}
+
+/* Confirmação */
+.rsvp{max-width:480px;margin:0 auto;display:grid;gap:18px}
+.field{display:grid;gap:6px}
+label,.legend{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--sage-deep)}
+input[type=text],input[type=number],textarea{font:inherit;color:var(--ink);background:rgba(255,255,255,.7);border:none;border-bottom:1px solid var(--sage);padding:10px 4px;width:100%;border-radius:0}
+textarea{resize:vertical;min-height:84px;border:1px solid var(--line)}
+input:focus,textarea:focus{outline:none;background:var(--white);border-color:var(--sage-deep)}
+.choice{display:flex;gap:10px;flex-wrap:wrap}
+.choice label{flex:1 1 160px;text-transform:none;letter-spacing:.02em;font-size:15px;color:var(--ink);border:1px solid var(--line);padding:12px 14px;display:flex;gap:10px;align-items:center;cursor:pointer;background:rgba(255,255,255,.45)}
+.choice input{accent-color:var(--sage)}
+.choice label:has(input:checked){border-color:var(--sage);background:var(--white)}
+.err{color:#9b4a3c;font-size:14px;min-height:1.2em;margin:0}
+.done{border:1px solid var(--sage);background:var(--white);padding:22px;text-align:center}
+.done p{margin:0 auto .6em}
+.swatches-title{display:block;text-align:center;margin-top:30px}
+.swatches{list-style:none;padding:0;margin:16px auto 0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px 10px;max-width:540px}
+.swatches li{display:grid;justify-items:center;align-content:start;gap:8px;font-size:12px;letter-spacing:.04em;line-height:1.35;color:var(--ink);text-align:center;min-width:0}
+.swatches i{display:block;width:52px;height:52px;border-radius:50%;border:1px solid var(--line)}
+@media (max-width:480px){.swatches{gap:16px 6px}.swatches i{width:44px;height:44px}.swatches li{font-size:11px;letter-spacing:0}}
+.deadline{text-align:center;font-size:14px;margin:-12px auto 26px}
+.hint{font-size:13px;color:var(--sage-deep);min-height:1.2em;margin:0}
+.sugg{display:grid;border:1px solid var(--line);background:var(--white);max-height:240px;overflow-y:auto}
+.sugg button{font:inherit;font-size:15px;text-align:left;color:var(--ink);background:none;border:0;border-bottom:1px solid var(--line);padding:11px 12px;cursor:pointer}
+.sugg button:last-child{border-bottom:0}
+.sugg button:hover,.sugg button:focus-visible{background:var(--paper-2);outline:none}
+.sugg .none{padding:11px 12px;font-size:14px;color:var(--sage-deep)}
+input.ok{border-bottom-color:var(--sage-deep);background:var(--white)}
+.guests{display:grid;gap:12px}
+.guests:empty{display:none}
+.guest{border:1px solid var(--sage);background:var(--white);padding:14px;display:grid;gap:12px;min-width:0}
+.guest-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.guest-head strong{font-weight:400;font-size:16px;color:var(--ink);min-width:0}
+.guest-head button{font:inherit;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-deep);background:none;border:0;padding:4px;cursor:pointer;flex:none}
+.guest .choice label{flex:1 1 120px;padding:9px 12px;font-size:14px}
+.guest .legend{font-size:11px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips:empty{display:none}
+.chips button{font:inherit;font-size:14px;color:var(--ink);background:var(--white);border:1px solid var(--sage);padding:6px 10px 6px 12px;display:flex;gap:8px;align-items:center;cursor:pointer;max-width:100%;text-align:left}
+.chips button span{color:var(--sage-deep);font-size:16px;line-height:1}
+input[type=search]{font:inherit;color:var(--ink);background:rgba(255,255,255,.7);border:none;border-bottom:1px solid var(--sage);padding:10px 4px;width:100%;border-radius:0;-webkit-appearance:none;appearance:none}
+input[type=search]:focus{outline:none;background:var(--white)}
+
+/* Pix */
+.gift{background:var(--paper-2);border-block:1px solid var(--line)}
+.pix{max-width:460px;margin:0 auto;text-align:center;border:1px solid var(--sage);background:var(--white);padding:30px 22px}
+.pix .key{font-family:var(--body);font-size:clamp(16px,4.4vw,20px);letter-spacing:.04em;word-break:break-all;margin:10px 0 20px;color:var(--ink);user-select:all}
+.pix .who{font-size:14px;color:var(--sage-deep);margin:0 auto 18px}
+.copied{font-size:13px;color:var(--sage-deep);min-height:1.3em;margin:10px 0 0}
+
+footer{text-align:center;padding-block:56px 64px}
+footer .mono-foot{display:block;width:36%;max-width:140px;height:auto;margin:0 auto}
+footer p{font-family:var(--display);font-style:italic;font-size:24px;color:var(--sage-deep);margin:14px auto 4px}
+footer small{letter-spacing:.4em;font-size:12px}
+
+@media (max-width:480px){
+  body{font-size:16px}
+  section{padding-block:52px}
+  .datebox{gap:10px}
+}
+</style>
+</head>
+<body>
+<nav aria-label="Seções">
+  <div class="wrap">
+    <a href="#sobre">O casamento</a>
+    <a href="#data">Data</a>
+    <a href="#locais">Locais</a>
+    <a href="#traje">Dress code</a>
+    <a href="#confirmar">Confirmar</a>
+    <a href="#presente">Presente</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="logo.png" alt="Logo do casamento: monograma R &amp; D com os nomes Raisa e Danilo e a data 16 . 01 . 2027" width="1468" height="1011">
+    <div class="invite">Raisa &amp; Danilo convidam para seu casamento</div>
+    <img class="casal" src="casal5.webp" alt="Raisa e Danilo de mãos dadas numa trilha no campo, ao pôr do sol, vestidos de branco" width="900" height="900">
+  </div>
+</header>
+
+<section id="sobre">
+  <div class="wrap">
+    <span class="eyebrow">O casamento</span>
+    <h2>Um dia simples, feito com amor</h2>
+    <div class="prose">
+      <p>Depois de tanto tempo dividindo a vida, decidimos tornar oficial o que já sentimos todos os dias. Escolhemos uma celebração pequena e íntima, ao lado dos parentes mais próximos.</p>
+      <p>Será uma cerimônia civil seguida de um almoço, com poucos convidados e muito carinho em cada detalhe. Ter você com a gente é o que vai tornar esse dia completo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="data" class="band">
+  <div class="wrap">
+    <span class="eyebrow">Guarde a data</span>
+    <h2>Sábado, às 11h30</h2>
+    <div class="datebox">
+      <div class="side">Sábado</div>
+      <div class="day">16</div>
+      <div class="side">11h30</div>
+      <div class="month">Janeiro · 2027</div>
+    </div>
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div><b id="cd-d">—</b><span>dias</span></div>
+      <div><b id="cd-h">—</b><span>horas</span></div>
+      <div><b id="cd-m">—</b><span>min</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="locais">
+  <div class="wrap">
+    <span class="eyebrow">Onde</span>
+    <h2>Locais</h2>
+    <div class="places">
+      <article class="place">
+        <span class="when">11h30 · Cerimônia</span>
+        <h3>Cartório Mucuripe</h3>
+        <address>Av. da Abolição, 3220 · Meireles<br>Fortaleza – CE · 60165-081</address>
+        <span class="note">A cerimônia começa pontualmente e não terá atrasos. Pedimos que chegue alguns minutos antes do horário.</span>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Cart%C3%B3rio%20Mucuripe%2C%20Av.%20da%20Aboli%C3%A7%C3%A3o%2C%203220%2C%20Meireles%2C%20Fortaleza%20-%20CE" target="_blank" rel="noopener">Ver no mapa</a>
+      </article>
+      <article class="place">
+        <span class="when">12h · Almoço</span>
+        <h3>Restaurante Gran Parrilha</h3>
+        <address>Praça Portugal, 71 · Meireles<br>Fortaleza – CE · 60170-010</address>
+        <span class="note">Após a cerimônia, pedimos que os convidados sigam direto para o restaurante.</span>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Gran%20Parrilha%2C%20Pra%C3%A7a%20Portugal%2C%2071%2C%20Meireles%2C%20Fortaleza%20-%20CE" target="_blank" rel="noopener">Ver no mapa</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="traje" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Dress code</span>
+    <h2>Passeio casual</h2>
+    <div class="prose">
+      <p>Venha confortável e elegante, num look passeio casual. Pedimos que prefira tons claros e pastéis, combinando com a leveza do dia.</p>
+    </div>
+    <span class="legend swatches-title">Cores de inspiração</span>
+    <ul class="swatches" aria-label="Cores de inspiração para as roupas">
+      <li><i style="background:#cfe2cb"></i>Verde-menta</li>
+      <li><i style="background:#a9ac97"></i>Verde-sálvia</li>
+      <li><i style="background:#7c7a53"></i>Verde-oliva</li>
+      <li><i style="background:#62684c"></i>Verde-musgo</li>
+      <li><i style="background:#f1daa6"></i>Amarelo-manteiga</li>
+      <li><i style="background:#f2e3cf"></i>Areia</li>
+      <li><i style="background:#c8b6a0"></i>Bege</li>
+      <li><i style="background:#bea181"></i>Caramelo</li>
+      <li><i style="background:#98755f"></i>Marrom-café</li>
+      <li><i style="background:#bfa3a0"></i>Malva</li>
+      <li><i style="background:#f1d3d3"></i>Rosa-claro</li>
+      <li><i style="background:#d2b0a7"></i>Rosa antigo</li>
+      <li><i style="background:#ded5ea"></i>Lavanda</li>
+      <li><i style="background:#b2c2d9"></i>Azul-bebê</li>
+      <li><i style="background:#87919d"></i>Azul-acinzentado</li>
+    </ul>
+  </div>
+</section>
+
+<section id="confirmar">
+  <div class="wrap">
+    <span class="eyebrow">RSVP</span>
+    <h2>Confirme sua presença</h2>
+    <p class="deadline">Pedimos que confirme até <strong>30 de novembro de 2026</strong>.<br>A confirmação é exclusiva para os convidados da lista.</p>
+
+    <form class="rsvp" id="rsvp" novalidate>
+      <div class="field">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" autocomplete="off" placeholder="Digite e escolha seu nome na lista" aria-describedby="nome-hint" aria-controls="sugestoes">
+        <div class="sugg" id="sugestoes" role="listbox" aria-label="Convidados encontrados" hidden></div>
+        <span class="hint" id="nome-hint"></span>
+      </div>
+      <div class="field">
+        <span class="legend" id="vai-l">Você vai?</span>
+        <div class="choice" role="radiogroup" aria-labelledby="vai-l">
+          <label><input type="radio" name="vai" id="vai-sim" value="sim" checked> Sim, estarei lá</label>
+          <label><input type="radio" name="vai" id="vai-nao" value="nao"> Infelizmente não poderei</label>
+        </div>
+      </div>
+      <div class="field" id="bebida-field">
+        <span class="legend" id="bebida-l">Consome bebida alcoólica?</span>
+        <div class="choice" role="radiogroup" aria-labelledby="bebida-l">
+          <label><input type="radio" name="bebida" id="bebida-sim" value="sim"> Sim</label>
+          <label><input type="radio" name="bebida" id="bebida-nao" value="nao"> Não</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="outro">Responder também por outro convidado (opcional)</label>
+        <input type="search" id="outro" autocomplete="off" placeholder="Pesquise o nome de um familiar" aria-controls="sugestoes-outro">
+        <div class="sugg" id="sugestoes-outro" role="listbox" aria-label="Convidados encontrados" hidden></div>
+        <div class="guests" id="chips"></div>
+      </div>
+      <div class="field">
+        <label for="msg">Recado para os noivos (opcional)</label>
+        <textarea id="msg" name="msg" placeholder="Restrições alimentares, um recado carinhoso…"></textarea>
+      </div>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn solid" type="submit">Enviar confirmação</button>
+    </form>
+
+    <div class="done rsvp" id="closed" hidden>
+      <p>O prazo para confirmar terminou em 30 de novembro de 2026.</p>
+      <p>Se precisar avisar algo, fale direto com os noivos pelo WhatsApp (85) 99799-2115.</p>
+    </div>
+
+    <div class="done rsvp" id="done" hidden>
+      <p>Abrimos o WhatsApp com sua confirmação pronta. Toque em <strong>enviar</strong> por lá para concluir.</p>
+      <p>Se ele não abriu, <a id="wa-link" href="#" target="_blank" rel="noopener">toque aqui</a>.</p>
+      <button class="btn" type="button" id="again">Editar resposta</button>
+    </div>
+  </div>
+</section>
+
+<section id="presente" class="gift">
+  <div class="wrap">
+    <span class="eyebrow">Presente</span>
+    <h2>Lista de presentes via Pix</h2>
+    <div class="prose"><p>Sua presença já é o nosso maior presente. Se quiser nos mimar mesmo assim, deixamos nossa chave Pix.</p></div>
+    <div class="pix">
+      <span class="legend">Chave Pix</span>
+      <div class="key" id="pix-key"></div>
+      <button class="btn solid" type="button" id="copy">Copiar chave</button>
+      <p class="copied" id="copied" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img class="mono-foot" src="monograma.png" alt="Monograma R &amp; D" width="638" height="633">
+    <p>Agradecemos sua presença!</p>
+    <small>16 . 01 . 2027</small>
+  </div>
+</footer>
+
+<script>
+/* ===== Ajuste aqui ===== */
+const WHATSAPP = "5585997992115";          // número que recebe as confirmações (55 + DDD + número)
+const PIX_KEY  = "casamento.raisaedanilo@gmail.com"; // chave Pix
+const PIX_NAME = "Raisa Neris Regis";          // nome do titular
+/* ======================= */
+
+document.getElementById("pix-key").textContent = PIX_KEY;
+
+// Contagem regressiva (horário de Fortaleza, UTC-3)
+const target = new Date("2027-01-16T11:30:00-03:00").getTime();
+function tick(){
+  const diff = Math.max(0, target - Date.now());
+  const d = Math.floor(diff/864e5), h = Math.floor(diff%864e5/36e5), m = Math.floor(diff%36e5/6e4);
+  document.getElementById("cd-d").textContent = d;
+  document.getElementById("cd-h").textContent = String(h).padStart(2,"0");
+  document.getElementById("cd-m").textContent = String(m).padStart(2,"0");
+}
+tick(); setInterval(tick, 30000);
+
+// Confirmação via WhatsApp — somente convidados da lista
+const CONVIDADOS = [
+  "Edyo Albuquerque Regis","Maisa Néris do Nascimento","Edyo Luís Néris Regis","Giovana Moura",
+  "Raiane Néris Regis","Leojairo Ribeiro dos Santos","Emily Santos","Eloá Santos",
+  "Gilmara Damião Pereira da Silva","Ronniere Bezerra da Silva","Maria Samara Pereira da Silva",
+  "Maria de Fátima Albuquerque","Maria Celi Néris","Suyene Leão de Castro","Maurício Iennaco de Castro",
+  "Natália Leão Andrade de Castro","Bruno de Andrade Sampaio","Maria Flor Andrade","Maria Tereza Andrade",
+  "Adriana Iennaco de Castro","Fernando Nogueira de Oliveira"
+];
+const PRAZO = new Date("2026-11-30T23:59:59-03:00").getTime();
+
+const norm = t => t.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/\s+/g," ").trim();
+const form = document.getElementById("rsvp"), done = document.getElementById("done"), err = document.getElementById("err");
+const nomeIn = document.getElementById("nome"), sugg = document.getElementById("sugestoes"), hint = document.getElementById("nome-hint");
+const outroIn = document.getElementById("outro"), suggOutro = document.getElementById("sugestoes-outro"), chips = document.getElementById("chips");
+const bebidaField = document.getElementById("bebida-field");
+let escolhido = null, outros = [];
+
+if (Date.now() > PRAZO){ form.hidden = true; document.getElementById("closed").hidden = false; }
+
+function buscar(q, excluir){
+  const termos = norm(q).split(" ");
+  return CONVIDADOS.filter(n => !excluir.includes(n)).filter(n => { const ps = norm(n).split(" "); return termos.every(t => ps.some(p => p.startsWith(t))); });
+}
+function mostrar(box, achados, aoEscolher){
+  box.replaceChildren();
+  if (!achados.length){
+    const d = document.createElement("div"); d.className = "none";
+    d.textContent = "Não encontramos esse nome na lista de convidados."; box.append(d);
+  } else achados.forEach(n => {
+    const b = document.createElement("button"); b.type = "button"; b.setAttribute("role","option");
+    b.textContent = n; b.addEventListener("click", () => aoEscolher(n)); box.append(b);
+  });
+  box.hidden = false;
+}
+function grupo(titulo, nome, valor, aoMudar){
+  const f = document.createElement("div"); f.className = "field";
+  const t = document.createElement("span"); t.className = "legend"; t.textContent = titulo;
+  const c = document.createElement("div"); c.className = "choice"; c.setAttribute("role","radiogroup");
+  [["sim","Sim"],["nao","Não"]].forEach(([v,txt]) => {
+    const l = document.createElement("label"), i = document.createElement("input");
+    i.type = "radio"; i.name = nome; i.id = nome + "-" + v; i.value = v; i.checked = valor === v;
+    i.addEventListener("change", () => { err.textContent = ""; aoMudar(v); });
+    l.append(i, document.createTextNode(" " + txt)); c.append(l);
+  });
+  t.id = nome + "-l"; c.setAttribute("aria-labelledby", t.id);
+  f.append(t, c); return f;
+}
+function renderChips(){
+  chips.replaceChildren(...outros.map(o => {
+    const k = CONVIDADOS.indexOf(o.nome);
+    const card = document.createElement("div"); card.className = "guest";
+    const head = document.createElement("div"); head.className = "guest-head";
+    const nm = document.createElement("strong"); nm.textContent = o.nome;
+    const rm = document.createElement("button"); rm.type = "button"; rm.textContent = "Remover";
+    rm.setAttribute("aria-label", "Remover " + o.nome);
+    rm.addEventListener("click", () => { outros = outros.filter(x => x !== o); renderChips(); });
+    head.append(nm, rm);
+    const beb = grupo("Consome bebida alcoólica?", "obeb-" + k, o.bebida, v => { o.bebida = v; });
+    beb.hidden = o.vai !== "sim";
+    const vai = grupo("Estará presente?", "ovai-" + k, o.vai, v => { o.vai = v; beb.hidden = v !== "sim"; });
+    card.append(head, vai, beb); return card;
+  }));
+}
+function escolher(n){
+  escolhido = n; nomeIn.value = n; nomeIn.classList.add("ok");
+  sugg.hidden = true; hint.textContent = "Convidado encontrado ✓"; err.textContent = "";
+  outros = outros.filter(o => o.nome !== n); renderChips();
+}
+nomeIn.addEventListener("input", () => {
+  escolhido = null; nomeIn.classList.remove("ok"); hint.textContent = "";
+  const q = norm(nomeIn.value);
+  if (q.length < 2){ sugg.hidden = true; return; }
+  const exato = CONVIDADOS.find(n => norm(n) === q);
+  if (exato){ escolher(exato); return; }
+  mostrar(sugg, buscar(q, []), escolher);
+});
+outroIn.addEventListener("input", () => {
+  const q = norm(outroIn.value);
+  if (q.length < 2){ suggOutro.hidden = true; return; }
+  mostrar(suggOutro, buscar(q, [escolhido, ...outros.map(o => o.nome)].filter(Boolean)), n => {
+    outros.push({nome: n, vai: null, bebida: null}); renderChips(); outroIn.value = ""; suggOutro.hidden = true; outroIn.focus();
+  });
+});
+form.addEventListener("change", () => { bebidaField.hidden = form.vai.value === "nao"; });
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  if (Date.now() > PRAZO){ form.hidden = true; document.getElementById("closed").hidden = false; return; }
+  if (!escolhido){ err.textContent = "Escolha seu nome na lista de convidados para continuar."; nomeIn.focus(); return; }
+  const vai = form.vai.value === "sim";
+  if (vai && !form.bebida.value){ err.textContent = "Responda se consome bebida alcoólica."; document.getElementById("bebida-sim").focus(); return; }
+  for (const o of outros){
+    if (!o.vai){ err.textContent = `Responda se ${o.nome} estará presente.`; return; }
+    if (o.vai === "sim" && !o.bebida){ err.textContent = `Responda se ${o.nome} consome bebida alcoólica.`; return; }
+  }
+  const msg = form.msg.value.trim();
+  err.textContent = "";
+  const linha = (nome, v, beb) => v === "sim"
+    ? `• ${nome}: estará presente · bebida alcoólica: ${beb === "sim" ? "sim" : "não"}`
+    : `• ${nome}: não poderá ir`;
+  const linhas = [linha(escolhido, form.vai.value, form.bebida.value), ...outros.map(o => linha(o.nome, o.vai, o.bebida))].join("\n");
+  let text = `Olá, Raisa e Danilo! Segue a confirmação para o casamento em 16/01/2027, às 11h30:\n\n${linhas}`;
+  if (msg) text += `\n\nRecado: ${msg}`;
+  const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
+  document.getElementById("wa-link").href = url;
+  form.hidden = true; done.hidden = false;
+  window.open(url, "_blank", "noopener");
+});
+document.getElementById("again").addEventListener("click", () => { done.hidden = true; form.hidden = false; });
+
+// Copiar Pix
+const copied = document.getElementById("copied");
+document.getElementById("copy").addEventListener("click", () => {
+  const ok = () => copied.textContent = "Chave copiada. Obrigado pelo carinho!";
+  const fallback = () => {
+    const r = document.createRange(); r.selectNodeContents(document.getElementById("pix-key"));
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    copied.textContent = "Chave selecionada — copie com o seu teclado.";
+  };
+  try { navigator.clipboard.writeText(PIX_KEY).then(ok, fallback); } catch(e){ fallback(); }
+});
+</script>
+</body>
+</html>
